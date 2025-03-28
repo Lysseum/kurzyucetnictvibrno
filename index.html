@@ -15,6 +15,7 @@
       color: #2c3e50;
       margin: 0;
       padding: 0;
+      overflow-x: hidden;
     }
     .container {
       max-width: 960px;
@@ -77,25 +78,41 @@
     footer a:hover {
       text-decoration: underline;
     }
+
+    .walking-man {
+      position: fixed;
+      bottom: 20px;
+      left: -100px;
+      width: 80px;
+      z-index: 999;
+      animation: walkAcross 20s linear infinite;
+    }
+
+    @keyframes walkAcross {
+      from { left: -100px; }
+      to { left: 110%; }
+    }
   </style>
 </head>
 <body>
+  <img class="walking-man" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Man_walking_animated_1.gif/80px-Man_walking_animated_1.gif" alt="Panáček s kalkulačkou">
+
   <div class="container">
     <header>
       <h1>Účetnictví vám začne dávat smysl</h1>
-      <p class="lead">Praktický kurz účetnictví v Brně. V přátelské atmosféře a bez zbytečné teorie.</p>
+      <p class="lead">Přijďte na praktický kurz v Brně a objevte, že účetnictví může být srozumitelné a dokonce i zábavné.</p>
     </header>
 
     <div class="highlight">
-      <p><strong>Chcete konečně rozumět účetnictví? Začněte s námi – jednoduše, srozumitelně a s praktickými příklady.</strong></p>
-      <p>Na kurzu vás krok za krokem provedeme základy účetnictví. Nepotřebujete žádné předchozí znalosti – jen chuť učit se něco, co opravdu využijete.</p>
+      <p><strong>Chcete porozumět účetnictví a naučit se ho používat v praxi? S námi to zvládnete snadno a bez stresu.</strong></p>
+      <p>Na kurzu vás krok za krokem provedeme základními principy účetnictví. Vysvětlujeme vše lidsky, přehledně a s důrazem na reálné příklady z praxe. Žádné zbytečné poučky – jen to, co opravdu využijete.</p>
       <ul>
-        <li>Malé skupiny a prostor pro dotazy</li>
-        <li>Skvělé lektorky s praxí</li>
-        <li>Pochopitelné příklady z praxe</li>
-        <li>Uvolněná a přátelská atmosféra</li>
+        <li>Učíme v malých skupinách, kde je dost prostoru pro každého.</li>
+        <li>Naši lektoři mají dlouholetou praxi a účetnictví znají do detailu.</li>
+        <li>Ukazujeme účetnictví na příkladech z reálné praxe, abyste věděli, co vás skutečně čeká.</li>
+        <li>Vytváříme uvolněnou atmosféru, kde se nikdo nebojí zeptat.</li>
       </ul>
-      <p>Účetnictví nemusí být strašák. Přihlaste se a zjistíte, že to jde i jednoduše.</p>
+      <p>Nemusíte mít žádné zkušenosti. Stačí zvědavost a chuť naučit se něco nového – ukážeme vám, že účetnictví může být logické, srozumitelné a zvládnutelné pro každého.</p>
       <a class="button" href="https://sosmittani.com/kurzy-ucetnictvi/" target="_blank">Zjisti více</a>
     </div>
 
